@@ -10,14 +10,14 @@ body {
 }
 
 .logo {
-    max-height:50px;
+    max-height:80px;
     width: auto;
     height: auto;
     position: relative;
 }
 
 .navbar {
-    height: 100px;
+    height: 140px;
     width: auto;
     display: flex;
     align-items: center;
@@ -48,21 +48,53 @@ body {
     font-size: 30pt;
     color: white;
     font-family: 'Outfit', sans-serif;
+    font-weight: bold;
     text-align: center;
+    margin-top: 5px;
 }
 
 .baixar-manual-btn {
-    margin-top: 50px;
-    padding: 20px 80px;
-    background-color: #002949;
+    max-height: fit-content;
+    max-width: fit-content;
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    background-color:#F9A44C ;
     color: white;
     font-family: 'Outfit', sans-serif;
-    font-size: large;
+    font-weight: bold;
+    font-size:15pt;
     text-decoration: none;
     border-style: solid;
     border-radius: 500px;
     border-color: #F9A44C;
     border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-btn-manual {
+    gap: 30px;
+    margin-top: 20px;
+    max-width: fit-content;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo-btn-manual {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15pt;
+    color: white;
+    text-align: center;
+}
+
+span {
+    color:#F9A44C;
 }
 
 .content a:hover {
