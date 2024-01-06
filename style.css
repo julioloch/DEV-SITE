@@ -156,7 +156,7 @@ p {
 }
 
 .text-manual {
-    width: clamp(400px, 50%, 600px);
+    width: clamp(400px, 80%, 600px);
     text-indent: 1.5em;
 }
 
