@@ -3,10 +3,37 @@
     margin: 0;
 }
 
+:root {
+    --amarelo: #F9A44C;
+    --azul: #002949;
+    --branco: #fff;
+
+    --widht-clamp: clamp(300px, 50%, 600px);
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Outfit', sans-serif;
-    background-color: #002949;
+    font-weight: 500;
+    background-color:var(--branco) ;
+}
+
+span {
+    color:var(--amarelo);
+}
+
+hr {
+    margin-top: 40px;
+    width: 80%;
+}
+
+.centrar-hr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: var(--azul);
 }
 
 .logo {
@@ -23,28 +50,29 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: #002949;
-    margin-top: 5px;
+    background-color: var(--azul);
 }
 
 .img-manual{
-    margin-top: 70px;
+    margin-top: 50px;
     max-width:80%;
     max-height: 500px;
     height: auto;
     width: auto;
+    margin-bottom: 60px;
 
 }
 
-.content {
-    margin: 20px;
+.content-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--azul);
 }
 
 .header-manual {
+    width: clamp(300px, 50%, 600px);
     font-size: 30pt;
     color: white;
     font-family: 'Outfit', sans-serif;
@@ -59,7 +87,7 @@ body {
     width: auto;
     height: auto;
     padding: 10px 30px;
-    background-color:#F9A44C ;
+    background-color:var(--amarelo) ;
     color: white;
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
@@ -67,17 +95,19 @@ body {
     text-decoration: none;
     border-style: solid;
     border-radius: 500px;
-    border-color: #F9A44C;
+    border-color: var(--amarelo);
     border-width: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    white-space: nowrap;
 }
 
 .container-btn-manual {
     gap: 30px;
-    margin-top: 20px;
+    padding: 0px 20px;
+    margin-top: 40px;
     max-width: fit-content;
     max-height: fit-content;
     display: flex;
@@ -87,16 +117,130 @@ body {
 }
 
 .subtitulo-btn-manual {
+    width: clamp(300px, 50%, 600px);
     font-family: 'Outfit', sans-serif;
+    font-weight: 500;
     font-size: 15pt;
     color: white;
     text-align: center;
 }
 
-span {
-    color:#F9A44C;
+.container-btn-manual a:hover {
+    background-color: var(--azul);
+    transition: 400ms;
 }
 
-.content a:hover {
-    background-color: #0057b33a;
+.mais-que-carne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100dvw;
+    height: fit-content;
+    width: auto;
+    
+    background-color: var(--branco);
+}
+
+.mais-que-carne p{
+    width: clamp(300px, 50%, 400px);
+    padding: 200px 0px;
+    color: var(--azul);
+    font-weight: medium;
+    font-size: 20pt;
+}
+
+.mais-que-carne img{
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+
+.container-manual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.text-manual {
+    width: clamp(400px, 50%, 600px);
+    text-indent: 20px;
+}
+
+.text-manual-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    
+}
+
+.text-manual-img-container img {
+    width: clamp(200px, 80%, 400px);
+}
+
+.text-manual p, h3{
+    margin-bottom: 20px;
+}
+
+.text-manual h2,h3 {
+    text-indent: 0px;
+    color: var(--azul);
+}
+
+.text-manual h2 {
+    margin-top: 60px;
+}
+
+.text-manual h3 {
+    color: var(--amarelo);
+}
+
+.text-manual span{
+    font-weight: bold;
+}
+
+.temperatura-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperatura {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: clamp(400px, 50%, 800px);
+    text-align: center;
+    text-wrap: nowrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.temperatura p {
+    margin: 0;
+}
+
+.bovino img, .suino img {
+    max-height: 60px;
+}
+
+.ovino img {
+    max-height: 60px;
+}
+
+.teste-mao h4{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--azul);
+}
+
+.controle-temperatura {
+    margin-bottom: 20px;
 }
