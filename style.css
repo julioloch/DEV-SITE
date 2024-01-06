@@ -7,6 +7,7 @@
     --amarelo: #F9A44C;
     --azul: #002949;
     --branco: #fff;
+    --vermelho: #AB3434;
 
     --widht-clamp: clamp(300px, 50%, 600px);
 }
@@ -19,17 +20,6 @@ body {
 
 span {
     color:var(--amarelo);
-}
-
-hr {
-    margin-top: 40px;
-    width: 80%;
-}
-
-.centrar-hr{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 p {
@@ -73,7 +63,7 @@ p {
 
 .header-manual {
     width: clamp(300px, 50%, 600px);
-    font-size: 30pt;
+    font-size: 2em;
     color: white;
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
@@ -91,7 +81,7 @@ p {
     color: white;
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
-    font-size:15pt;
+    font-size:1.5em;
     text-decoration: none;
     border-style: solid;
     border-radius: 500px;
@@ -120,7 +110,7 @@ p {
     width: clamp(300px, 50%, 600px);
     font-family: 'Outfit', sans-serif;
     font-weight: 500;
-    font-size: 15pt;
+    font-size: 1.2em;
     color: white;
     text-align: center;
 }
@@ -148,7 +138,7 @@ p {
     padding: 200px 0px;
     color: var(--azul);
     font-weight: medium;
-    font-size: 20pt;
+    font-size: 2em;
 }
 
 .mais-que-carne img{
@@ -167,7 +157,11 @@ p {
 
 .text-manual {
     width: clamp(400px, 50%, 600px);
-    text-indent: 20px;
+    text-indent: 1.5em;
+}
+
+.text-manual p {
+    font-size: 1.2em;
 }
 
 .text-manual-img-container{
@@ -212,7 +206,7 @@ p {
 
 .temperatura {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     flex-direction: row;
     width: clamp(400px, 50%, 800px);
@@ -227,18 +221,47 @@ p {
     margin: 0;
 }
 
+.temperatura h4 {
+    color: var(--vermelho);
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.temperatura-graus {
+    margin-top: 50px;
+    padding-top: 5px;
+}
+
+.temperatura-tempo {
+    color: var(--vermelho);
+    font-weight: bold;
+    padding-top: 5px;
+}
+
 .bovino img, .suino img {
     max-height: 60px;
 }
 
 .ovino img {
-    max-height: 60px;
+    max-height: 70px;
+}
+
+.teste-mao{
+    border: #002949;
+    border-style: solid;
+    border-width: 1px;
+    padding: 50px;
 }
 
 .teste-mao h4{
     text-align: center;
     margin-bottom: 20px;
     color: var(--azul);
+}
+
+.teste-mao-text {
+    font-size: 3em;
+    text-align: center;
 }
 
 .controle-temperatura {
