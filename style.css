@@ -15,7 +15,7 @@
 body {
     font-family: 'Outfit', sans-serif;
     font-weight: 500;
-    background-color:var(--branco) ;
+    background-color:var(--branco);
 }
 
 span {
@@ -104,6 +104,8 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    text-wrap: pretty;
 }
 
 .subtitulo-btn-manual {
@@ -156,7 +158,8 @@ p {
 }
 
 .text-manual {
-    width: clamp(400px, 80%, 600px);
+    width: clamp(200px, 80%, 600px);
+    max-width: 600px;
     text-indent: 1.5em;
 }
 
@@ -207,14 +210,17 @@ p {
 .temperatura {
     display: flex;
     align-items: baseline;
-    justify-content:space-around;
+    justify-content:center;
     flex-direction: row;
-    width: clamp(400px, 80%, 600px);
+    flex-wrap: wrap;
     text-align: center;
     text-wrap: nowrap;
+    width: clamp(200px, 80%, 500px);
     font-size: 0.7em;
     margin-top: 20px;
     margin-bottom: 40px;
+    gap: 30px;
+    overflow: hidden;
     margin-left: -20px;
 }
 
@@ -259,6 +265,7 @@ p {
     text-align: center;
     margin-bottom: 20px;
     color: var(--azul);
+    text-wrap: pretty;
 }
 
 .teste-mao-text {
