@@ -18,9 +18,18 @@ body {
     background-color:var(--branco);
 }
 
-span {
+.span-red{
+    color:var(--vermelho);
+}
+
+.span-yellow{
     color:var(--amarelo);
 }
+
+.span-blue{
+    color:var(--azul);
+}
+
 
 p {
     color: var(--azul);
@@ -186,15 +195,27 @@ p {
 
 .text-manual h2,h3 {
     text-indent: 0px;
-    color: var(--azul);
 }
 
 .text-manual h2 {
     margin-top: 60px;
+    color: var(--azul);
+    font-size: 1.2em;
+    letter-spacing: .1em;
 }
 
 .text-manual h3 {
     color: var(--amarelo);
+    font-size: 0.9em;
+    letter-spacing: .15em;
+}
+
+.text-manual h4 {
+    color: var(--azul);
+    margin-bottom: 20px;
+    margin-top: 60px;
+    font-size: 0.9em;
+    letter-spacing: .15em;
 }
 
 .text-manual span{
@@ -221,7 +242,7 @@ p {
     margin-bottom: 40px;
     gap: 30px;
     overflow: hidden;
-    margin-left: -20px;
+    text-indent: 0px;
 }
 
 .temperatura p {
@@ -258,21 +279,57 @@ p {
     border-style: solid;
     border-width: 1px;
     padding: 50px;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .teste-mao h4{
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 0px;
     color: var(--azul);
-    text-wrap: pretty;
+    text-wrap: nowrap;
+    text-indent: 0px;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
 }
 
 .teste-mao-text {
     font-size: 3em;
     text-align: center;
+    text-indent: 0px;
+    margin-bottom: 0px;
 }
 
 .controle-temperatura {
     margin-bottom: 20px;
+}
+
+.dicas-de-seguranca-container {
+    border: var(--vermelho);
+    border-width: 1px;
+    border-style: solid;
+    text-indent: 0px;
+    padding: 50px;
+    margin-top: 80px;
+}
+
+.dicas-de-seguranca-container h1{
+    color: var(--vermelho);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-wrap: nowrap;
+}
+
+.dicas-de-seguranca-container p {
+    display: list-item;
+}
+
+list-item{
+    color: var(--vermelho);
+}
+
+.dicas-de-seguranca-container > p > span{
+    color: var(--vermelho);
 }
