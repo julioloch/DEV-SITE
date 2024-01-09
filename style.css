@@ -36,7 +36,7 @@ p {
 }
 
 .logo {
-    max-height:80px;
+    max-height:60px;
     width: auto;
     height: auto;
     position: relative;
@@ -190,7 +190,7 @@ p {
 }
 
 .text-manual-img-container img {
-    width: clamp(200px, 80%, 400px);
+    width: clamp(200px, 90%, 400px);
 }
 
 .text-manual p, h3{
@@ -355,7 +355,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
 }
@@ -385,7 +385,7 @@ p {
 }
 
 .regulavel img {
-    height: 400px;
+    height: 350px;
     
 }
 
@@ -397,6 +397,9 @@ p {
     gap: 10px 20px; /* Espaço entre as linhas e colunas */
     padding: 20px;
     background-color: #f7f7f7;
+    border-color: var(--amarelo);
+    border-width: 1px;
+    border-style:dotted;
     color: #333;
     text-indent: 0px;
   }
@@ -410,10 +413,28 @@ p {
     font-weight: bold;
   }
   .grid-item-line {
-    border-top: 1px solid #000; /* Linha horizontal */
-    width: 5px; /* Largura da linha */
+    border-top: 1px solid; /* Linha horizontal */
+    border-color: var(--amarelo);
+    width: 10px; /* Largura da linha */
     margin: auto; /* Centraliza a linha */
   }
   .grid-item-value {
     font-weight: normal;
+  }
+
+  .especificacoes-container {
+    margin-bottom: 80px;
+  }
+
+  .especificacoes-tecnicas {
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  .traco-especificacoes {
+    border-top: var(--azul);
+    border-width: 2px;
+    border-style: solid;
+    margin: 20px auto;
+    width: 80px;
   }
