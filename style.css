@@ -166,6 +166,10 @@ p {
     width: 100%;
 }
 
+.como-usar-o-espeto>p {
+    text-indent: 0px;
+}
+
 .text-manual {
     width: clamp(200px, 80%, 600px);
     max-width: 600px;
@@ -251,12 +255,13 @@ p {
 
 .temperatura h4 {
     color: var(--vermelho);
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
 .temperatura-graus {
-    margin-top: 50px;
+    margin-top: 30px;
     padding-top: 5px;
 }
 
@@ -310,7 +315,20 @@ p {
     border-style: solid;
     text-indent: 0px;
     padding: 50px;
-    margin-top: 80px;
+    margin:80px auto;
+}
+
+.dicas-de-seguranca-container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.dicas-de-seguranca-container > div > img{
+    width: 60px;
 }
 
 .dicas-de-seguranca-container h1{
@@ -326,10 +344,76 @@ p {
     display: list-item;
 }
 
-list-item{
-    color: var(--vermelho);
-}
-
 .dicas-de-seguranca-container > p > span{
     color: var(--vermelho);
 }
+
+.regulavel {
+    text-indent: 0px;
+    margin: 0px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.regulavel-info {
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.regulavel-info h1 {
+    color: var(--azul);
+    margin-top: -5px;
+}
+
+.regulavel-info h2 {
+    margin-top: 20px;
+    color: var(--amarelo);
+
+}
+
+.regulavel-info h3 {
+    color: var(--azul);
+}
+
+.regulavel img {
+    height: 400px;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Três colunas: nome, linha, valor */
+    max-width: 800px;
+    margin: auto;
+    gap: 10px 20px; /* Espaço entre as linhas e colunas */
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    text-indent: 0px;
+  }
+  .grid-item-name, .grid-item-value {
+    padding: 5px; /* Espaçamento para texto */
+    margin:auto 0px;
+
+  }
+  .grid-item-name {
+    text-align: right;
+    font-weight: bold;
+  }
+  .grid-item-line {
+    border-top: 1px solid #000; /* Linha horizontal */
+    width: 5px; /* Largura da linha */
+    margin: auto; /* Centraliza a linha */
+  }
+  .grid-item-value {
+    font-weight: normal;
+  }
