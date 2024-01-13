@@ -234,20 +234,28 @@ section > video {
 
 .container-quatro-hastes {
     background-color: var(--azul);
-    width: 100%;
-}
-.quatro-hastes {
+    width: 100%;   
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+}
+.quatro-hastes {
     color: white;
     padding: 40px 0px;
+    width: clamp(200px, 50%, 600px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .quatro-hastes > h2 {
     margin: 20px 0px;
+    text-align: center;
 }
 
 .quatro-hastes > img {
