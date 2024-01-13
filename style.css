@@ -5,7 +5,7 @@
 
 :root {
     --amarelo: #F9A44C;
-    --azul: #002949;
+    --azul: #151515;
     --branco: #fff;
     --vermelho: #AB3434;
 }
@@ -105,7 +105,6 @@ header {
     font-size: 3em;
     line-height: 1em;
     text-wrap: balance;
-    
 }
 
 .container-hero {
@@ -173,19 +172,21 @@ header {
     margin-top: 20px;
 }
 
-.section-container > section {
+section {
     width: clamp(200px, 80%, 800px);
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     color: var(--azul);
+    padding: 40px 0px;
 }
 
-.section-container > section > video {
+section > video {
     margin-top: 20px;
     border-radius: 30px;
-    width: clamp(300px, 50%, 500px);
+    width: 300px;
+    height: auto;
 }
 
 .span-yellow {
@@ -229,4 +230,90 @@ header {
 
 .giro-constante > img {
     width: 110px;
+}
+
+.container-quatro-hastes {
+    background-color: var(--azul);
+    width: 100%;
+}
+.quatro-hastes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 40px 0px;
+}
+
+.quatro-hastes > h2 {
+    margin: 20px 0px;
+}
+
+.quatro-hastes > img {
+    width: clamp(300px, 80%, 500px);
+    margin-top: 50px;
+}
+
+.align-text-right > h1, h2{
+    text-align: right;
+}
+
+.rodape {
+    background-color: rgb(25, 25, 25);
+    color: rgb(180, 180, 180);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.rodape > img {
+    width: 80px;
+}
+
+.rodape > p {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1em;
+    width: clamp(300px, 50%, 600px);
+    margin: 50px;
+}
+
+.rodape > .links-rodape {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px 0px;
+}
+
+.rodape > .links-rodape > a {
+    text-decoration: none;
+    color: gray;
+}
+
+.rodape > .links-rodape > a:hover, a:focus{
+    text-decoration: none;
+    color: var(--amarelo);
+    transition: color 200ms;
+}
+
+.container-regulavel {
+    width: 100%;
+    background-color: var(--azul);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-regulavel > section > h1,
+.container-regulavel > section > h2,
+.container-regulavel > section > p {
+    color: white;
+}
+
+.container-regulavel > section > h2 {
+    margin-top: 5px;
 }
