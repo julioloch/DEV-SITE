@@ -343,7 +343,7 @@ section > video {
 
 .card-espetos {
     border: 2px solid #0042f8;
-    background-color: #ccc ;
+    background-color: #ebebeb ;
     padding: 40px;
     width: 200px;
     height: 350px;
@@ -368,4 +368,23 @@ section > video {
 .card-espetos:hover {
     transform: rotate(-0.7deg) scale(1.1);
     border-color:var(--amarelo);
+    cursor: pointer;
+}
+
+.confira {
+    position: relative;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 100vw;
+    border: 2px solid #0042f8;
+    left: 120px;
+    top: -10px;
+    color: #0042f8;
+    font-weight: bold;
+}
+
+.card-espetos:hover > .confira {
+    color: inherit;
+    border: inherit;
+    transition: inherit;
 }
