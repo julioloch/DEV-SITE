@@ -335,7 +335,7 @@ a:focus {
 
 .card-videos-wrapper {
     gap: 50px;
-    padding: 80px 20px;
+    padding: 50px 20px 100px 20px;
 }
 
 .suporta-carne {
@@ -403,4 +403,11 @@ a:focus {
 .video-crop>video {
     max-width: 300px;
     margin: -5px;
+}
+
+.super-versatil-text {
+    margin-bottom: 30px;
+    gap: 10px;
+    padding-inline: 50px;
+    padding-top: 50px;
 }
