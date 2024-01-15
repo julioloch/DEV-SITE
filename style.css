@@ -166,17 +166,21 @@ header {
 
 .sua-carne-wrapper>img {
     width: 110px;
+    padding-inline: 80px;
+
 }
 
 .sua-carne-no-seu-ponto {
     position: relative;
     width: 295px;
+    padding-inline: 80px;
+
 }
 
 .sua-carne-no-seu-ponto>h1 {
     position: absolute;
     top: 90px;
-    left: 110px;
+    left: 190px;
     line-height: 0.9em;
     width: 200px;
 }
@@ -187,6 +191,7 @@ header {
 
 .giro-constante {
     max-width: 400px;
+    padding-inline: 80px;
     line-height: 1em;
     text-align: center;
 }
@@ -250,6 +255,10 @@ a:focus {
     width: auto;
     gap: 60px;
     margin: 40px 50px;
+}
+
+.card-espetos-topo, .card-espetos-baixo {
+    gap: 60px;
 }
 
 .card-espetos {
@@ -320,11 +329,12 @@ a:focus {
 .conheca-os-modelos-text {
     margin-bottom: 30px;
     gap: 10px;
+    padding-inline: 80px;
 }
 
-.videos-wrapper {
+.card-videos-wrapper {
     gap: 50px;
-    padding-block: 80px;
+    padding: 80px 20px;
 }
 
 .suporta-carne {
@@ -345,6 +355,8 @@ a:focus {
     align-items: flex-start;
     position: relative;
     max-width: 400px;
+    width: auto;
+    height: auto;
     overflow: hidden;
     background-color: rgb(234, 234, 234);
     padding: 40px;
@@ -354,7 +366,7 @@ a:focus {
 }
 
 .card-video-text-wrapper {
-    max-width: 300px;
+    max-width: 290px;
     padding-left: 10px;
 }
 
@@ -368,6 +380,7 @@ a:focus {
 .card-video-text-wrapper>h1 {
     padding-block: 5px;
     color: rgb(37, 37, 37);
+    font-size: 1.8em;
 }
 
 .card-video-text-wrapper>h2 {
@@ -379,13 +392,16 @@ a:focus {
 
 
 .video-crop {
-    max-width: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
     overflow: hidden;
     border-radius: 10px;
 }
 
 .video-crop>video {
-    max-width: 310px;
+    max-width: 300px;
     margin: -5px;
 
 }
