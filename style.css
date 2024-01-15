@@ -229,7 +229,7 @@ footer {
     text-align: center;
     line-height: 1.1em;
     max-width: 400px;
-    padding-inline: 80px;
+    padding-inline: 50px;
 
 }
 
@@ -330,7 +330,7 @@ a:focus {
 .conheca-os-modelos-text {
     margin-bottom: 30px;
     gap: 10px;
-    padding-inline: 80px;
+    padding-inline: 50px;
 }
 
 .card-videos-wrapper {
