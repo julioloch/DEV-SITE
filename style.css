@@ -119,55 +119,139 @@ header {
         radial-gradient(67.08px at 50% calc(100% + 60.00px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask);
+
 }
 
 .hero-text>h1 {
     font-size: 3em;
     line-height: 1em;
-    text-align: center;
-    text-wrap: balance;
+    text-align: left;
 }
 
 .container-hero {
-    padding-top: 120px;
-    padding-bottom: 80px;
-    width: clamp(200px, 80%, 800px);
+    padding: 120px 50px 0px 50px;
     color: white;
 }
 
 .hero-text {
     gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .espeto-giratorio-aleggra {
-    border: var(--amarelo) 1px solid;
-    color: var(--amarelo);
+    color: rgb(255, 255, 255);
+    border-right: 1px solid var(--amarelo);
     width: fit-content;
     font-size: 0.7em;
     font-weight: 100;
-    padding: 5px 10px;
+    padding-right: 20px;
+    padding-block: 15px;
     letter-spacing: .4em;
-    margin: 20px 0px;
+    margin: 0px;
+    text-align: left;
+    margin-left: 3px;
 }
 
-.espeto-materiais {
-    width: clamp(300px, 90%, 500px);
-    margin: 30px 0px;
+.espeto-giratorio-wrapper {
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.espeto-giratorio-wrapper>img {
+    width: 80px;
+}
+
+.hero-btns {
+    gap: 20px;
+    padding-block: 30px;
+    font-weight: bold;
+}
+
+.hero-img {
+    max-height:100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    margin-bottom: -60px;
+}
+
+@media (max-width: 800px) {
+
+    .hero-text {
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .espeto-giratorio-aleggra>h2 {
+        text-align: center;
+    }
+
+    .hero-text > h1 {
+        text-align: center;
+    }
+
+    .hero-img { 
+        display: none;
+    }
+
+    .saiba-mais-btn {
+        display: none;
+    }
+
+    .hero-btns {
+        padding-bottom: 100px;
+    }
+
+}
+
+.hero-img > img {
+    max-height: 100%;
+    max-width: 180px;
+    width: auto;
+    height: auto;
+    transform: rotate(-10deg);
+    z-index: -1;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.comprar-btn {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    border: 1px solid var(--amarelo);
+    border-radius: 100vw;
+    z-index: 20;
+}
+
+.saiba-mais-btn {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    border: 1px solid var(--amarelo);
+    border-radius: 100vw;
+    z-index: 20;
+}
+.comprar-btn:hover {
+    background-color: var(--amarelo);
+    color: black;
+    transition: all .3s ease-in-out;
 }
 
 .span-yellow {
     color: var(--amarelo);
 }
 
-.sua-carne-wrapper {
+.sua-carne-como-funciona-wrapper {
     gap: 90px;
-    padding-block: 100px;
-}
-
-.sua-carne-wrapper>img {
-    width: 110px;
-    padding-inline: 80px;
-
+    padding-block: 30px;
 }
 
 .sua-carne-no-seu-ponto {
@@ -190,7 +274,6 @@ header {
 
 .giro-constante {
     max-width: 400px;
-    padding-inline: 80px;
     line-height: 1em;
     text-align: center;
 }
@@ -410,4 +493,32 @@ a:focus {
     gap: 10px;
     padding-inline: 50px;
     padding-top: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.como-funciona {
+    padding: 50px;
+    border-radius: 20px;
+    gap: 10px;
+    max-width: 350px;
+    text-align: center;
+    border-top: 5px solid var(--amarelo) ;
+    background-color: rgb(241, 241, 241);
+    margin: 50px
+}
+
+.como-funciona>img {
+    width: 110px;
+    padding: 20px;
+}
+
+.como-funciona>p { 
+    color: black;
+    font-size: 1.10em;
+    max-width: 200px;
+}
+
+.como-funciona span{
+    font-weight: bold;
 }
