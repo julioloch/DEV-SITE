@@ -174,7 +174,6 @@ header {
     position: relative;
     width: 295px;
     padding-inline: 80px;
-
 }
 
 .sua-carne-no-seu-ponto>h1 {
@@ -222,7 +221,7 @@ footer {
 }
 
 .rodape>img {
-    width: 80px;
+    max-width: 80px;
 }
 
 .rodape>p {
@@ -230,6 +229,8 @@ footer {
     text-align: center;
     line-height: 1.1em;
     max-width: 400px;
+    padding-inline: 80px;
+
 }
 
 .rodape>.links-rodape {
@@ -387,7 +388,6 @@ a:focus {
     padding-bottom: 20px;
     font-weight: lighter;
     color: rgb(37, 37, 37);
-
 }
 
 
@@ -403,5 +403,4 @@ a:focus {
 .video-crop>video {
     max-width: 300px;
     margin: -5px;
-
 }

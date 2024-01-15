@@ -44,6 +44,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--azul);
+    padding-top: 60px;
 }
 
 .header-manual {
