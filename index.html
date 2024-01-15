@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Aleggra - Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
     <header>
         <div class="navbar">
@@ -29,104 +32,111 @@
         </div>
     </header>
 
-    <div class="hero">
-        <div class="container-hero">
-            <div class="hero-text">
+    <div class="hero flex-col-center">
+        <div class="container-hero flex-row-center">
+            <div class="hero-text flex-col-center">
                 <h1>Seu churrasco <br>merece o melhor.</h1>
                 <div class="espeto-giratorio-aleggra">
                     <h2>ESPETO GIRATÓRIO</h2>
                 </div>
             </div>
             <img class="espeto-materiais" src="img/espeto-materiais.png" alt="Espeto Giratório Aleggra">
-            <a class="saiba-mais" href="#section0">
-                <p>saiba mais</p>
-                <img class="seta" src="img/seta.png" alt="seta">
-            </a>
+        </div>
+    </div>
+
+    <div class="sua-carne-wrapper flex-row-center">
+        <div class="sua-carne-no-seu-ponto">
+            <img src="img/motor-aleggra.PNG" alt="Motor do espeto giratório aleggra">
+            <h1>sua carne no<br><span class="span-yellow">seu ponto.</span><br>sempre.</h1>
+        </div>
+        <img src="img/rotacao.png" alt="3rpm">
+        <h1 class="giro-constante">o giro constante mantém a <span class="span-yellow">carne suculenta</span> e assada
+            por inteiro</h1>
+    </div>
+
+
+    <div class="conheca-os-modelos flex-row-center">
+
+        <div class="conheca-os-modelos-text flex-col-center">
+            <h1>quatro hastes para escolher</h1>
+            <p>uma para cada situação</p>
+        </div>
+
+        <div class="container-card-espetos flex-row-center">
+            <div class="card-espetos card-simples">
+                <h1>Simples</h1>
+                <p>cortes com ossos e peças inteiras</p>
+                <img class="img-card-espetos img-simples" src="img/espetos/simples-aleggra.png" alt="Espeto">
+                <div class="confira">
+                    <p>confira</p>
+                </div></a>
+            </div>
+            <div class="card-espetos card-duplo">
+                <h1>Duplo</h1>
+                <p>cortes sem ossos</p>
+                <img class="img-card-espetos" src="img/espetos/duplo-aleggra.png" alt="Espeto">
+                <div class="confira">
+                    <p>confira</p>
+                </div></a>
+            </div>
+            <div class="card-espetos card-triplo">
+                <h1>Triplo</h1>
+                <p>cortes sem ossos</p>
+                <img class="img-card-espetos" src="img/espetos/triplo-aleggra.png" alt="Espeto">
+                <div class="confira">
+                    <p>confira</p>
+                </div></a>
+            </div>
+            <div class="card-espetos card-petiscos">
+                <h1>Petiscos</h1>
+                <p>petiscos em geral</p>
+                <img class="img-card-espetos" src="img/espetos/petiscos-aleggra.png" alt="Espeto">
+                <div class="confira">
+                    <p>confira</p>
+                </div></a>
             </div>
         </div>
     </div>
 
-    <div class="section-container">
-
-        <section class="sua-carne-seu-ponto">
-            <div class="sua-carne-no-seu-ponto">
-                <img src="img/motor-aleggra.PNG" alt="Motor do espeto giratório aleggra">
-                <h1>sua carne no<br><span class="span-yellow">seu ponto.</span><br>sempre.</h1>
+    <div class="videos-wrapper flex-row-center">
+        <div class="suporta-carne card-video">
+            <div class="card-video-text-wrapper">
+                <p>SUPORTA ATÉ</p>
+                <h1>4,5kg de carne</h1>
+                <h2>churrasco pra todo mundo!</h2>
             </div>
-            <div class="giro-constante">
-                <img src="img/rotacao.png" alt="3rpm">
-                <h1>o giro constante mantém a <span class="span-yellow">carne suculenta</span> e assada por inteiro</h1>
+            <div class="video-crop">
+                <video src="video/espeto-aleggra-gira-muita-carne.mp4" loop autoplay muted></video>
             </div>
-        </section>
-
-        <section class="suporta-carne">
-            <h2>suporta</h2>
-            <h1>4,5kg de carne</h1>
-            <h2>churrasco pra todo mundo!</h2>
-            <video src="video/espeto-aleggra-gira-muita-carne.mp4" loop autoplay muted></video>
-        </section>
-        
-        <div class="container-regulavel">
-            <section class="regulavel">
+        </div>
+        <div class="regulavel-e-removivel card-video">
+            <div class="card-video-text-wrapper">
+                <p>SERVE NA MAIORIA DAS CHURRASQUEIRAS</p>
                 <h1>regulável e removível</h1>
-                <h2>serve na maioria das churrasqueiras</h2>
+                <h2>52cm - 60cm de profundidade</h2>
+            </div>
+            <div class="video-crop">
                 <video src="video/espeto-aleggra-regulavel.mp4" loop autoplay muted></video>
-                <h2>52cm - 60cm</h2>
-                <p>de profundidade</p>
-            </section>
-        </div>
-        
-        <section class="hastes-trocaveis">
-            <h1>hastes trocáveis</h1>
-            <h2>100% inox AISI 304</h2>
-            <video src="video/haste-substituivel.mp4" loop autoplay muted></video>
-        </section>
-
-        <div class="container-quatro-hastes">
-            <div class="quatro-hastes">
-                <h1>quatro hastes para escolher</h1>
-                <h2>100% inox AISI 304</h2>
-                <img src="img/quatro-hastes.PNG" norepeat alt="render das quatro hastes">
             </div>
         </div>
+        <div class="hastes-trocaveis card-video">
+            <div class="card-video-text-wrapper">
 
-        <section class="conheca-os-produtos">
-            <a href="#">
-                <div><p>conheça os modelos</p></div>
-            </a>
-        </section>
+                <h1>hastes trocáveis</h1>
+                <h2>100% inox AISI 304</h2>
+            </div>
+            <div class="video-crop">
+                <video src="video/haste-substituivel.mp4" loop autoplay muted></video>
+            </div>
+        </div>
     </div>
 
-    <div class="container-card-espetos flex-row-center">
-        <div class="card-espetos card-simples">
-            <h1>Simples</h1>
-            <p>cortes com ossos e peças inteiras</p>
-            <img class="img-card-espetos img-simp" src="img/espetos/simples-aleggra.png" alt="Espeto">
-            <div class="confira"><p>confira</p></div></a>
-        </div>
-        <div class="card-espetos card-duplo">
-            <h1>Duplo</h1>
-            <p>cortes sem ossos</p>
-            <img class="img-card-espetos" src="img/espetos/duplo-aleggra.png" alt="Espeto">
-            <div class="confira"><p>confira</p></div></a>
-        </div>
-        <div class="card-espetos card-triplo">
-            <h1>Triplo</h1>
-            <p>cortes sem ossos</p>
-            <img class="img-card-espetos" src="img/espetos/triplo-aleggra.png" alt="Espeto">
-            <div class="confira"><p>confira</p></div></a>
-        </div>
-        <div class="card-espetos card-petiscos">
-            <h1>Petiscos</h1>
-            <p>petiscos em geral</p>
-            <img class="img-card-espetos" src="img/espetos/petiscos-aleggra.png" alt="Espeto">
-            <div class="confira"><p>confira</p></div></a>
-        </div>
-    </div>
+
 
     <footer>
         <div class="rodape">
-            <p>Churrasco é mais que carne na brasa, é o tempero perfeito para bons momentos em família e amigos. Aproveite cada segundo!</p>
+            <p>Churrasco é mais que carne na brasa, é o tempero perfeito para bons momentos em família e amigos.
+                Aproveite cada segundo!</p>
             <img src="img/logo-branca.png" alt="Logo aleggra">
             <div class="links-rodape">
                 <a href="#">Contato</a>
@@ -135,8 +145,6 @@
             </div>
         </div>
     </footer>
+</body>
 
-
-        
-    </body>
-    </html>
+</html>
