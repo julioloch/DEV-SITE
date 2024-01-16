@@ -194,7 +194,7 @@ header {
         text-align: center;
     }
 
-    .hero-img { 
+    .hero-img {
         display: none;
     }
 
@@ -252,6 +252,7 @@ header {
 .sua-carne-como-funciona-wrapper {
     gap: 90px;
     padding-block: 30px;
+    width: 100%;
 }
 
 .sua-carne-no-seu-ponto {
