@@ -255,22 +255,28 @@ header {
     width: 100%;
 }
 
+.sua-carne-wrapper {
+    width: 315px;
+}
+
 .sua-carne-no-seu-ponto {
     position: relative;
-    width: 295px;
-    padding-inline: 80px;
+    height: auto;
+    width: auto;
 }
 
 .sua-carne-no-seu-ponto>h1 {
     position: absolute;
-    top: 90px;
-    left: 190px;
+    top: 120px;
+    left: 130px;
     line-height: 0.9em;
     width: 200px;
+    height: auto;
 }
 
 .sua-carne-no-seu-ponto>img {
-    width: 150px;
+    width: 180px;
+    height: auto;
 }
 
 .giro-constante {
