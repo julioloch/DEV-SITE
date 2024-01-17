@@ -5,7 +5,8 @@
 
 :root {
     --amarelo: #F9A44C;
-    --azul: #1a1a1a;
+    --azul: #4888FF;
+    --roxo: #864AFF;
     --branco: #fff;
     --vermelho: #AB3434;
 }
@@ -351,7 +352,7 @@ a:focus {
 }
 
 .card-espetos {
-    border: 2px solid #0042f8;
+    border: 2px solid var(--azul);
     background-color: #f0f0f0;
     padding: 40px;
     width: 200px;
@@ -427,15 +428,15 @@ a:focus {
 }
 
 .suporta-carne {
-    color: rgb(47, 121, 211);
+    color: var(--amarelo);
 }
 
 .regulavel-e-removivel {
-    color: rgb(94, 3, 185);
+    color: var(--azul);
 }
 
 .hastes-trocaveis {
-    color: rgb(3, 192, 179);
+    color: var(--roxo);
 }
 
 .card-video {
@@ -526,6 +527,83 @@ a:focus {
 
 .como-funciona span {
     font-weight: bold;
+}
+
+/* ######  MATERIAIS DE QUALIDADE  ###### */
+
+.title > p,
+.title > h1{
+    margin: auto;
+    text-align: center;
+    max-width: 900px;
+    padding-inline: 40px;
+    padding-block: 5px;
+}
+
+.materiais-de-qualidade-cards-wrapper {
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-block: 80px;
+}
+
+.card-materiais-de-qualidade {
+    max-width: 150px;
+    background-color: hsl(0, 0%, 96%);
+    padding: 50px 20px;
+    border: 2px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    gap: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.card-materiais-de-qualidade-text > h1,
+.card-materiais-de-qualidade-text > p {
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    transition: all .2s ease-in-out;
+}
+
+.card-materiais-de-qualidade-text > p {
+    color: black;
+    padding-top: 5px;
+}
+
+.card-materiais-de-qualidade > img {
+    max-height: 150px;
+}
+
+.materiais-square {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    background-color: hsl(0, 0%, 80%);
+    transition: all .2s ease-in-out;
+}
+
+.madeira:hover .materiais-square.madeira {
+    background-color: var(--amarelo);
+}
+.inox:hover .materiais-square.inox {
+    background-color: var(--azul);
+}
+.aluminio:hover .materiais-square.aluminio {
+    background-color: var(--roxo);
+}
+
+.madeira:hover {
+    color: var(--amarelo);
+    border-color: var(--amarelo);
+}
+
+.inox:hover {
+    color: var(--azul);
+    border-color: var(--azul);
+}
+
+.aluminio:hover { 
+    color: var(--roxo);
+    border-color: var(--roxo);
 }
 
 
