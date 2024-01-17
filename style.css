@@ -9,7 +9,6 @@
     --roxo: #864AFF;
     --branco: #fff;
     --vermelho: #AB3434;
-    --cinza-escuro: #e6e6e6;
     --cinza-claro: #f9f9f9;
     --grafite: #424242;
 }
@@ -262,7 +261,7 @@ header {
     max-width: 350px;
     text-align: center;
     border-top: 5px solid var(--amarelo);
-    background-color: rgb(241, 241, 241);
+    background-color: var(--cinza-claro);
 }
 
 .como-funciona>img {
@@ -380,7 +379,7 @@ a:focus {
 
 .card-espetos {
     border: 2px solid var(--azul);
-    background-color: #f0f0f0;
+    background-color: var(--cinza-claro);
     padding: 40px;
     width: 200px;
     height: 350px;
@@ -415,10 +414,10 @@ a:focus {
     width: fit-content;
     padding: 10px 20px;
     border-radius: 100vw;
-    border: 2px solid #0042f8;
+    border: 2px solid var(--azul);
     right: 30px;
     bottom: 30px;
-    color: #0042f8;
+    color: var(--azul);
     font-weight: bold;
 }
 
@@ -475,7 +474,7 @@ a:focus {
     width: auto;
     height: auto;
     overflow: hidden;
-    background-color: rgb(234, 234, 234);
+    background-color: var(--cinza-claro);
     padding: 40px;
     border-radius: 20px;
     text-align: left;
@@ -554,61 +553,13 @@ a:focus {
     padding: 50px 20px;
     border-radius: 10px;
     gap: 20px;
-    border: 2px solid;
+    border: 1px solid;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-
-
-    
-    .sua-carne-wrapper,
-    .como-funciona,
-    .card-espetos,
-    .card-video
-     {
-        scale: .8;
-        opacity: 0;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-        animation-range-start: cover;
-        animation-range-end:contain -10px;
-    }
-    .card-materiais-de-qualidade {
-        scale: .8;
-        opacity: 0;
-        animation: fade-in-out linear forwards;
-        animation-timeline: view(30vh);
-    }
-
-    @keyframes fade-in-out {
-        0% {
-            opacity: 0;
-        }
-
-        30% {
-            scale: 1;
-            opacity: 1;
-        }
-        70% {
-            opacity: 1;
-            scale: 1;
-
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-
-    @keyframes fade-in {
-        from {opacity: 0;}
-        to {
-            scale: 1;
-            opacity: 1;
-        }
-        
-    }
+.card-materiais-de-qualidade>p {
+    text-align: center;
+    margin-top: -10px;
 }
-
 
 .card-materiais-de-qualidade-text>h1,
 .card-materiais-de-qualidade-text>p {
@@ -750,4 +701,60 @@ a:focus {
 
 .arrow.down {
     transform: translateY(-50%) rotate(90deg);
+}
+
+
+/* ######  ANIMAÇÕES  ###### */
+
+
+@media (prefers-reduced-motion: no-preference) {
+
+
+    
+    .sua-carne-wrapper,
+    .como-funciona,
+    .card-espetos,
+    .card-video
+     {
+        scale: .8;
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end:contain -10px;
+    }
+    .card-materiais-de-qualidade {
+        scale: .8;
+        opacity: 0;
+        animation: fade-in-out linear forwards;
+        animation-timeline: view(30vh);
+    }
+
+    @keyframes fade-in-out {
+        0% {
+            opacity: 0;
+        }
+
+        30% {
+            scale: 1;
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+            scale: 1;
+
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes fade-in {
+        from {opacity: 0;}
+        to {
+            scale: 1;
+            opacity: 1;
+        }
+        
+    }
 }
