@@ -250,8 +250,32 @@ header {
 .sua-carne-como-funciona-wrapper {
     gap: 90px;
     padding-block: 30px;
-    width: 100%;
 }
+
+.como-funciona {
+    padding: 50px;
+    border-radius: 20px;
+    gap: 20px;
+    max-width: 350px;
+    text-align: center;
+    border-top: 5px solid var(--amarelo);
+    background-color: rgb(241, 241, 241);
+}
+
+.como-funciona>img {
+    max-width: 110px;
+}
+
+.como-funciona>p {
+    color: black;
+    font-size: 1em;
+    max-width: 250px;
+}
+
+.como-funciona span {
+    font-weight: bold;
+}
+
 
 .sua-carne-wrapper {
     width: 315px;
@@ -503,32 +527,6 @@ a:focus {
     margin: auto;
 }
 
-.como-funciona {
-    padding: 50px;
-    border-radius: 20px;
-    gap: 10px;
-    max-width: 350px;
-    text-align: center;
-    border-top: 5px solid var(--amarelo);
-    background-color: rgb(241, 241, 241);
-    margin: 50px
-}
-
-.como-funciona>img {
-    width: 110px;
-    padding: 20px;
-}
-
-.como-funciona>p {
-    color: black;
-    font-size: 1.10em;
-    max-width: 200px;
-}
-
-.como-funciona span {
-    font-weight: bold;
-}
-
 /* ######  MATERIAIS DE QUALIDADE  ###### */
 
 .title > p,
@@ -544,6 +542,7 @@ a:focus {
     gap: 20px;
     flex-wrap: wrap;
     padding-block: 80px;
+    padding-inline: 40px;
 }
 
 .card-materiais-de-qualidade {
