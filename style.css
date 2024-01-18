@@ -385,7 +385,7 @@ a:focus {
     height: 350px;
     border-radius: 20px;
     color: rgb(47, 56, 68);
-    overflow: clip;
+    overflow: hidden;
     transition: all .2s ease-in-out;
     text-indent: 0px;
     position: relative;
@@ -590,23 +590,25 @@ a:focus {
 }
 
 .card-materiais-de-qualidade.madeira,
-.card-materiais-de-qualidade.madeira > h1 {
+.card-materiais-de-qualidade.madeira>h1 {
     color: var(--amarelo);
 }
+
 .materiais-square.inox {
     background-color: var(--azul);
 }
 
 .card-materiais-de-qualidade.inox,
-.card-materiais-de-qualidade.inox > h1 {
+.card-materiais-de-qualidade.inox>h1 {
     color: var(--azul);
 }
+
 .materiais-square.aluminio {
     background-color: var(--roxo);
 }
 
 .card-materiais-de-qualidade.aluminio,
-.card-materiais-de-qualidade.aluminio > h1 {
+.card-materiais-de-qualidade.aluminio>h1 {
     color: var(--roxo);
 }
 
@@ -701,60 +703,4 @@ a:focus {
 
 .arrow.down {
     transform: translateY(-50%) rotate(90deg);
-}
-
-
-/* ######  ANIMAÇÕES  ###### */
-
-
-@media (prefers-reduced-motion: no-preference) {
-
-
-    
-    .sua-carne-wrapper,
-    .como-funciona,
-    .card-espetos,
-    .card-video
-     {
-        scale: .8;
-        opacity: 0;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-        animation-range-start: cover;
-        animation-range-end:contain -10px;
-    }
-    .card-materiais-de-qualidade {
-        scale: .8;
-        opacity: 0;
-        animation: fade-in-out linear forwards;
-        animation-timeline: view(30vh);
-    }
-
-    @keyframes fade-in-out {
-        0% {
-            opacity: 0;
-        }
-
-        30% {
-            scale: 1;
-            opacity: 1;
-        }
-        70% {
-            opacity: 1;
-            scale: 1;
-
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-
-    @keyframes fade-in {
-        from {opacity: 0;}
-        to {
-            scale: 1;
-            opacity: 1;
-        }
-        
-    }
 }
