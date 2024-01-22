@@ -119,9 +119,6 @@ header {
     color: var(--amarelo);
 }
 
-.hero {
-}
-
 .hero-text>h1 {
     font-size: 3em;
     line-height: 1em;
