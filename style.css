@@ -19,7 +19,7 @@ html {
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: var(--branco);
+    background-color: #1a1a1a;
 }
 
 h1 {
@@ -34,6 +34,11 @@ h2 {
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 .flex-row-center {
@@ -115,14 +120,6 @@ header {
 }
 
 .hero {
-    background: rgb(69, 34, 28);
-    background: linear-gradient(145deg, rgba(23, 22, 28, 1) 0%, rgba(54, 54, 88, 1) 46%, rgba(23, 43, 80, 1) 100%);
-    --mask:
-        radial-gradient(67.08px at 50% calc(100% - 90.00px), #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
-        radial-gradient(67.08px at 50% calc(100% + 60.00px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
-
 }
 
 .hero-text>h1 {
@@ -174,13 +171,10 @@ header {
 .hero-img {
     max-height: 100%;
     max-width: 100%;
-    width: auto;
-    height: auto;
     padding: 30px;
-    margin-bottom: -60px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 699px) {
 
     .hero-text {
         justify-content: center;
@@ -249,64 +243,123 @@ header {
     color: var(--amarelo);
 }
 
-.sua-carne-como-funciona-wrapper {
-    gap: 90px;
+.card-grid {
+    display: grid;
+    margin: auto;
+    padding-inline: 16px;
+    padding-block: 60px;
+    gap: 20px;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.card-grid-item {
+    border-radius: 0.9em;
+    padding: 16px;
+    background-color: var(--cinza-claro);
+    border: 1px solid rgba(0,0 ,0 , 0.2);
+    text-align: center;
+    grid-column: span 1;
+    grid-row: span 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title {
     padding-block: 30px;
 }
 
+.card-title>h1 {
+    padding-block: 10px;
+}
+
+.card-grid-item>img{
+    padding-block: 40px;
+    max-width: 300px;
+
+}
+
+.praticidade > img {
+    margin-bottom: -50px;
+    margin-left: -15px;
+    transform: scale(1.1);
+}
+
+.praticidade>.card-title>p{
+    max-width: 300px;
+}
+
+.inoxaisi304 {
+    overflow: hidden;
+}
+
+.inoxaisi304>img {
+    margin-bottom: -60px;
+}
+
 .como-funciona {
-    padding: 50px;
-    border-radius: 20px;
-    gap: 20px;
-    max-width: 350px;
-    text-align: center;
-    border-top: 5px solid var(--amarelo);
-    background-color: var(--cinza-claro);
+    padding-block: 40px;
+}
+
+.como-funciona>p {
+    max-width: 300px;
 }
 
 .como-funciona>img {
     max-width: 110px;
+    padding-block: 20px;
 }
 
-.como-funciona>p {
-    color: black;
-    font-size: 1em;
-    max-width: 250px;
-}
 
 .como-funciona span {
     font-weight: bold;
 }
 
 
-.sua-carne-wrapper {
-    width: 315px;
-}
-
 .sua-carne-no-seu-ponto {
-    position: relative;
-    height: auto;
-    width: auto;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
 }
 
 .sua-carne-no-seu-ponto>h1 {
-    position: absolute;
-    top: 120px;
-    left: 130px;
+    text-align: left;
+    font-size: 1.8em;
     line-height: 0.9em;
-    width: 200px;
-    height: auto;
+    margin-left: -1em;
+    margin-top: -.8em;
 }
 
 .sua-carne-no-seu-ponto>img {
-    width: 180px;
-    height: auto;
+    max-width: 150px;
 }
 
-.giro-constante {
-    max-width: 400px;
-    line-height: 1em;
-    text-align: center;
+.materiais-do-espeto-card-wrapper {
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 16px;
+}
+
+.materiais-do-espeto-card {
+    max-width: 300px;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.materiais-do-espeto-card > img {
+    max-height: 100px;
+    filter:saturate(0%) brightness(0%);
+
+}
+
+.materiais-do-espeto-card-text > h1,
+.materiais-do-espeto-card-text > p    {
+    max-width: 9em;
+    text-align: left;
+    font-size: 1em;
+}
+
+.traco-materiais-do-espeto-card {
+    border-left: 1px solid rgb(148, 148, 148);
+    height: 60px;
 }
 
 footer {
@@ -316,7 +369,7 @@ footer {
 }
 
 .rodape {
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(16, 16, 16);
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -327,11 +380,6 @@ footer {
     width: 100%;
     padding-top: 150px;
     padding-bottom: 50px;
-    --mask:
-        radial-gradient(67.08px at 50% 90.00px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
-        radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px 100% repeat-x;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
 }
 
 .rodape>img {
@@ -393,14 +441,10 @@ a:focus {
 }
 
 .card-espetos>img {
-    width: 350px;
+    max-width: 300px;
     position: absolute;
-    bottom: -20px;
-    left: -70px
-}
-
-.img-simples {
-    transform: scale(1.1);
+    bottom:-10px;
+    right:20px
 }
 
 .card-espetos:hover {
@@ -429,16 +473,7 @@ a:focus {
 .conheca-os-modelos {
     padding-block: 130px;
     text-align: center;
-    background: rgb(23, 22, 28);
-    background: linear-gradient(43deg, rgba(23, 22, 28, 1) 0%, rgba(54, 54, 88, 1) 46%, rgba(23, 43, 80, 1) 100%);
     color: white;
-    --mask:
-        radial-gradient(67.08px at 50% 90.00px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
-        radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
-        radial-gradient(67.08px at 50% calc(100% - 90.00px), #000 99%, #0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
-        radial-gradient(67.08px at 50% calc(100% + 60.00px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
 }
 
 
@@ -451,18 +486,6 @@ a:focus {
 .card-videos-wrapper {
     gap: 50px;
     padding: 50px 20px 100px 20px;
-}
-
-.suporta-carne {
-    color: var(--amarelo);
-}
-
-.regulavel-e-removivel {
-    color: var(--azul);
-}
-
-.hastes-trocaveis {
-    color: var(--roxo);
 }
 
 .card-video {
@@ -478,7 +501,7 @@ a:focus {
     padding: 40px;
     border-radius: 20px;
     text-align: left;
-    border-top: 3px solid;
+    border-top: 3px solid var(--amarelo);
 }
 
 .card-video-text-wrapper {
@@ -513,6 +536,8 @@ a:focus {
     height: auto;
     overflow: hidden;
     border-radius: 10px;
+    user-select: none;
+    pointer-events: none;
 }
 
 .video-crop>video {
@@ -521,101 +546,18 @@ a:focus {
 }
 
 .super-versatil-text {
-    margin-bottom: 30px;
     gap: 10px;
+    color: white;
     padding-inline: 50px;
-    padding-top: 50px;
     text-align: center;
     margin: auto;
-}
-
-/* ######  MATERIAIS DE QUALIDADE  ###### */
-
-.title>p,
-.title>h1 {
-    margin: auto;
-    text-align: center;
-    max-width: 900px;
-    padding-inline: 40px;
-    padding-block: 5px;
-}
-
-.materiais-de-qualidade-cards-wrapper {
-    gap: 20px;
-    flex-wrap: wrap;
-    padding-block: 80px;
-    padding-inline: 40px;
-}
-
-.card-materiais-de-qualidade {
-    max-width: 150px;
-    background-color: var(--cinza-claro);
-    padding: 50px 20px;
-    border-radius: 10px;
-    gap: 20px;
-    border: 1px solid;
-}
-
-.card-materiais-de-qualidade>p {
-    text-align: center;
-    margin-top: -10px;
-}
-
-.card-materiais-de-qualidade-text>h1,
-.card-materiais-de-qualidade-text>p {
-    font-size: 1em;
-    text-align: center;
-    margin: auto;
-
-}
-
-.card-materiais-de-qualidade-text>p {
-    padding-top: 5px;
-    color: var(--grafite);
-}
-
-.card-materiais-de-qualidade>img {
-    max-height: 150px;
-}
-
-.materiais-square {
-    width: 10px;
-    height: 10px;
-    border-radius: 3px;
-    background-color: hsl(0, 0%, 80%);
-}
-
-.materiais-square.madeira {
-    background-color: var(--amarelo);
-}
-
-.card-materiais-de-qualidade.madeira,
-.card-materiais-de-qualidade.madeira>h1 {
-    color: var(--amarelo);
-}
-
-.materiais-square.inox {
-    background-color: var(--azul);
-}
-
-.card-materiais-de-qualidade.inox,
-.card-materiais-de-qualidade.inox>h1 {
-    color: var(--azul);
-}
-
-.materiais-square.aluminio {
-    background-color: var(--roxo);
-}
-
-.card-materiais-de-qualidade.aluminio,
-.card-materiais-de-qualidade.aluminio>h1 {
-    color: var(--roxo);
 }
 
 /* ######  FAQ  ###### */
 
 .container-faq-wrapper {
     padding-bottom: 50px;
+    color: white;
 }
 
 .container-faq-wrapper>h1 {
@@ -703,4 +645,34 @@ a:focus {
 
 .arrow.down {
     transform: translateY(-50%) rotate(90deg);
+}
+
+@media (min-width: 800px) {
+    .span-2-row {
+        grid-row: span 2;
+    }
+
+    .span-2-col {
+        grid-column: span 2;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1000px;
+        grid-auto-flow: dense;
+    }
+
+    .inoxaisi304 {
+        grid-column: span 3;
+    }
+
+    .materiais-do-espeto {
+        grid-column: span 3;
+    }
+
+    .materiais-do-espeto-card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }

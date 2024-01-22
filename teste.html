@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 100px;
+  }
+
+  .grid-item {
+    background-color: #ff0000;
+    padding: 20px;
+    text-align: center;
+    border-radius: .5em;
+    width: 500px;
+  }
+
+  .central-item {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+  }
+
+  /* Responsive layout for mobile */
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+
+    .central-item {
+      order: -1; /* Makes it the first item */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <!-- Top left item -->
+  <div class="grid-item">Auxiliary Claws</div>
+
+  <!-- Central item -->
+  <div class="grid-item central-item">Central Item</div>
+
+  <!-- Top right item -->
+  <div class="grid-item">Practicality</div>
+
+  <!-- Bottom left item -->
+  <div class="grid-item">Cable and End Caps</div>
+
+  <!-- Bottom center item -->
+  <div class="grid-item">Rotation System</div>
+
+  <!-- Bottom right item -->
+  <div class="grid-item">Motor Support and Box</div>
+</div>
+
+</body>
+</html>
