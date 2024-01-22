@@ -268,7 +268,7 @@ h3 {
 .specs-grid-container {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    max-width: 800px;
+    max-width: 900px;
     gap: 10px 20px;
     padding: 20px;
     background-color: #f8f8f8;
@@ -292,13 +292,15 @@ h3 {
 }
 
 .specs-grid-item-line {
-    border-top: 1px solid;
-    border-color: var(--amarelo);
+    margin-top: 3px;
+    height: 2px;
+    background-color: var(--amarelo);
     width: 10px;
     margin: auto;
 }
 
 .specs-grid-item-value {
+    text-align: left;
     font-weight: normal;
 }
 
