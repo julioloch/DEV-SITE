@@ -15,19 +15,14 @@
 
 <body>
     <header>
-        <div class="navbar">
-            <img class="logo" src="img/logo-branca.png" alt="Logo Aleggra">
-            <div class="links">
-                <a href="manual.html">
-                    <div class="btn-baixar-manual">
-                        <p>acessar o manual</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="btn-produtos">
-                        <p>produtos</p>
-                    </div>
-                </a>
+        <div class="navbar flex-row-center">
+            <a href="index.html"><img class="logo-navbar" src="img/logo-branca.png" alt="Logo Aleggra"></a>
+            <div class="links flex-row-center">
+                <a class="links-navbar" href="simples.html">simples</a>
+                <a class="links-navbar" href="duplo.html">duplo</a>
+                <a class="links-navbar" href="triplo.html">triplo</a>
+                <a class="links-navbar" href="petiscos.html">petiscos</a>
+                <a class="links-navbar" href="manual.html">acessar o manual</a>
             </div>
         </div>
     </header>
@@ -88,14 +83,14 @@
                 </div>
                 <img src="img/espetos/suporte-e-sistema-de-giro-motor-espeto-aleggra.png" alt="suporte e sistema de giro do motor aleggra">
             </div>
-            <div class="card-grid-item">
+            <div class="card-grid-item suporta flex-col-center">
                 <div class="card-title">
                     <p>suporta até</p>
                     <h1>4,5kg</h1>
                     <p>de carne</p>
                 </div>
             </div>
-            <div class="card-grid-item">
+            <div class="card-grid-item regulavel flex-col-center">
                 <div class="card-title">
                     <p>para churrasqueiras de</p>
                     <h1>52cm - 65cm</h1>
@@ -142,40 +137,48 @@
             </div>
             <div class="container-card-espetos flex-row-center">
                 <div class="card-espetos-topo flex-row-center">
+                    <a href="simples.html">
                     <div class="card-espetos card-simples">
                         <h1>Simples</h1>
                         <p>cortes com ossos e peças inteiras</p>
                         <img class="img-card-espetos img-simples" src="img/espetos/simples-aleggra.png" alt="Espeto">
                         <div class="confira">
                             <p>confira</p>
-                        </div></a>
+                        </div>
                     </div>
+                    </a>
+                    <a href="simples.html">
                     <div class="card-espetos card-duplo">
                         <h1>Duplo</h1>
                         <p>cortes sem ossos</p>
                         <img class="img-card-espetos" src="img/espetos/duplo-aleggra.png" alt="Espeto">
                         <div class="confira">
                             <p>confira</p>
-                        </div></a>
+                        </div>
                     </div>
+                    </a>
                 </div>
                 <div class="card-espetos-baixo flex-row-center">
+                    <a href="simples.html">
                     <div class="card-espetos card-triplo">
                         <h1>Triplo</h1>
                         <p>cortes sem ossos</p>
                         <img class="img-card-espetos" src="img/espetos/triplo-aleggra.png" alt="Espeto">
                         <div class="confira">
                             <p>confira</p>
-                        </div></a>
+                        </div>
                     </div>
+                    </a>
+                    <a href="simples.html">
                     <div class="card-espetos card-petiscos">
                         <h1>Petiscos</h1>
                         <p>petiscos em geral</p>
                         <img class="img-card-espetos" src="img/espetos/petiscos-aleggra.png" alt="Espeto">
                         <div class="confira">
                             <p>confira</p>
-                        </div></a>
+                        </div>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -197,7 +200,7 @@
                     <h2>churrasco pra todo mundo!</h2>
                 </div>
                 <div class="video-crop">
-                    <video autoplay loop muted playsinline>  
+                    <video autoplay loop muted playsinline preload="auto">  
                         <source src="/video/espeto-aleggra-gira-muita-carne.mp4" type="video/mp4">  
                         <source src="/video/webm/espeto-aleggra-gira-muita-carne.webm" type="video/webm">  
                         Desculpe, seu browser não suporta vídeos em HTML5.
@@ -211,7 +214,7 @@
                     <h2>52cm - 60cm de profundidade</h2>
                 </div>
                 <div class="video-crop">
-                    <video autoplay loop muted playsinline>  
+                    <video autoplay loop muted playsinline preload="auto">  
                         <source src="/video/espeto-aleggra-regulavel.mp4" type="video/mp4">  
                         <source src="/video/webm/espeto-aleggra-regulavel.webm" type="video/webm">  
                         Desculpe, seu browser não suporta vídeos em HTML5.
@@ -225,7 +228,7 @@
                     <h2>100% inox AISI 304</h2>
                 </div>
                 <div class="video-crop">
-                    <video autoplay loop muted playsinline>  
+                    <video autoplay loop muted playsinline preload="auto">  
                         <source src="/video/haste-substituivel.mp4" type="video/mp4">  
                         <source src="/video/webm/haste-substituivel.webm" type="video/webm">  
                         Desculpe, seu browser não suporta vídeos em HTML5.
