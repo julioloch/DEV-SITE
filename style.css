@@ -179,7 +179,6 @@ img {
     border-radius: 0.9em;
     padding: 16px;
     background-color: var(--cinza-claro);
-    border: 1px solid rgba(0,0 ,0 , 0.2);
     text-align: center;
     grid-column: span 1;
     grid-row: span 1;
@@ -585,23 +584,55 @@ a:focus {
     transform: scale(1.14) translate(-5px, 10px);
 }
 
-.card-grid-simples>.garra {grid-area: garra;}
-.card-grid-simples>.simples-com-garra {grid-area: simples-com-garra;}
-.card-grid-simples>.praticidade {grid-area: praticidade;}
-.card-grid-simples>.inoxaisi304 {grid-area: inoxaisi304;}
-.card-grid-simples>.suporta {grid-area: suporta;}
-.card-grid-simples>.regulavel {grid-area: regulavel;}
-.card-grid-simples>.materiais-do-espeto {grid-area: materiais;}
+/* ##### CARD GRID DUPLO #######0 */
 
-.card-grid>.sua-carne-no-seu-ponto {grid-area: sua-carne;}
-.card-grid>.como-funciona {grid-area: como-funciona;}
-.card-grid>.praticidade {grid-area: praticidade;}
-.card-grid>.inoxaisi304 {grid-area: inoxaisi304;}
-.card-grid>.suporta {grid-area: suporta;}
-.card-grid>.regulavel {grid-area: regulavel;}
-.card-grid>.materiais-do-espeto {grid-area: materiais;}
+.card-grid-duplo {
+    padding-block: 40px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+}
 
-.card-grid-simples>.simples-com-garra>img {max-height: 70%;}
+.card-grid-duplo > .card-grid-item {
+    background-color: #d1d1d1;
+
+}
+
+.espeto-duplo-principal{
+    padding: 0;
+    overflow: hidden;
+    grid-area: espeto-duplo-principal;
+
+}
+.detalhe-ponteira-espeto-duplo{
+    padding: 0;
+    overflow: hidden;
+    grid-area: detalhe-ponteira-espeto-duplo;
+}
+.ponta-desmontada-espeto-duplo{
+    padding: 0;
+    overflow: hidden;
+    grid-area: ponta-desmontada-espeto-duplo;
+}
+.espeto-duplo-desmontado{
+    padding: 0;
+    overflow: hidden;
+    grid-area: espeto-duplo-desmontado;
+}
+
+
+.simples-com-garra>img {max-height: 70%;}
+
+.simples-com-garra {grid-area: simples-com-garra;}
+.sua-carne-no-seu-ponto {grid-area: sua-carne;}
+.como-funciona {grid-area: como-funciona;}
+.garra {grid-area: garra;}
+.praticidade {grid-area: praticidade;}
+.inoxaisi304 {grid-area: inoxaisi304;}
+.suporta {grid-area: suporta;}
+.regulavel {grid-area: regulavel;}
+.materiais-do-espeto {grid-area: materiais;}
+
 
 /* ###### HERO ESPETOS ###### */
 
@@ -668,6 +699,8 @@ a:focus {
     padding: 5px;
     margin: auto 0px;
     letter-spacing: .05em;
+    max-width: 10em;
+
 }
 
 .specs-grid-item-name {
@@ -688,14 +721,15 @@ a:focus {
     font-weight: normal;
 }
 
-@media (min-width: 800px) {
-    .span-2-row {
-        grid-row: span 2;
-    }
+.object-fit-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
-    .span-2-col {
-        grid-column: span 2;
-    }
+/* ###### ESPETO DUPLO ###### */
+
+@media (min-width: 800px) {
     
     .card-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -726,9 +760,22 @@ a:focus {
         "materiais materiais materiais";
     }
 
+    .card-grid-duplo {
+        grid-template-columns: repeat(3, 1fr);
+        width: clamp(700px, 90%, 1200px);
+        grid-template-areas:
+        "espeto-duplo-desmontado espeto-duplo-desmontado espeto-duplo-principal"
+        "espeto-duplo-desmontado espeto-duplo-desmontado espeto-duplo-principal"
+        "detalhe-ponteira-espeto-duplo detalhe-ponteira-espeto-duplo espeto-duplo-principal"
+        "detalhe-ponteira-espeto-duplo detalhe-ponteira-espeto-duplo praticidade"
+        "inoxaisi304 suporta ponta-desmontada-espeto-duplo" 
+        "inoxaisi304 regulavel regulavel "
+        "materiais materiais materiais" ;
+    }
+
 }
 
-@media (max-width: 699px) {
+@media (max-width: 799px) {
 
     .navbar{
         flex-wrap: nowrap;
@@ -802,6 +849,22 @@ a:focus {
         grid-template-areas: 
         "simples-com-garra"
         "garra"
+        "praticidade"
+        "inoxaisi304"
+        "suporta"
+        "regulavel"
+        "materiais";
+    }
+
+    .card-grid-duplo {
+        grid-template-columns: 1fr;
+        padding-inline: 30px;
+        gap: 30px;
+        grid-template-areas:
+        "espeto-duplo-desmontado"
+        "espeto-duplo-principal"
+        "detalhe-ponteira-espeto-duplo"
+        "ponta-desmontada-espeto-duplo" 
         "praticidade"
         "inoxaisi304"
         "suporta"
