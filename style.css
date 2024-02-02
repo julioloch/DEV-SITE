@@ -10,6 +10,7 @@
     --branco: #fff;
     --vermelho: #AB3434;
     --cinza-claro: #f9f9f9;
+    --cinza-d1: #d1d1d1;
     --grafite: #424242;
 }
 
@@ -20,6 +21,7 @@ html {
 body {
     font-family: 'Outfit', sans-serif;
     background-color: #1a1a1a;
+    color: var(--cinza-d1);
 }
 
 h1 {
@@ -70,7 +72,7 @@ img {
 
 .links-navbar {
     padding: 20px 10px;
-    color: white;
+    color: var(--cinza-d1);
 }
 
 .links-navbar:hover {
@@ -78,7 +80,7 @@ img {
     color: var(--amarelo);
 }
 
-.links>:last-child{
+.links>:last-child {
     padding-left: 40px;
 }
 
@@ -90,7 +92,6 @@ img {
 
 .container-hero {
     padding: 120px 50px 0px 50px;
-    color: white;
 }
 
 .hero-text {
@@ -100,7 +101,7 @@ img {
 }
 
 .espeto-giratorio-aleggra {
-    color: rgb(255, 255, 255);
+    color: var(--cinza-d1);
     border-right: 1px solid var(--amarelo);
     width: fit-content;
     font-size: 0.7em;
@@ -151,7 +152,7 @@ img {
 .comprar-btn,
 .saiba-mais-btn {
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: var(--cinza-d1);
     padding: 10px 50px;
     border: 1px solid var(--amarelo);
     border-radius: 100vw;
@@ -173,15 +174,15 @@ img {
     margin: auto;
     padding-inline: 16px;
     gap: 20px;
+    padding-top: 50px;
 }
 
 .card-grid-item {
     border-radius: 0.9em;
     padding: 16px;
-    background-color: var(--cinza-claro);
+    background-color: var(--cinza-d1);
+    color: var(--grafite);
     text-align: center;
-    grid-column: span 1;
-    grid-row: span 1;
     align-items: center;
     justify-content: center;
 }
@@ -194,7 +195,7 @@ img {
     padding-block: 10px;
 }
 
-.praticidade>.card-title>p{
+.praticidade>.card-title>p {
     max-width: 300px;
 }
 
@@ -253,14 +254,14 @@ img {
     gap: 20px;
 }
 
-.materiais-do-espeto-card > img {
+.materiais-do-espeto-card>img {
     max-height: 100px;
-    filter:saturate(0%) brightness(0%);
+    filter: saturate(0%) brightness(30%);
 
 }
 
-.materiais-do-espeto-card-text > h1,
-.materiais-do-espeto-card-text > p    {
+.materiais-do-espeto-card-text>h1,
+.materiais-do-espeto-card-text>p {
     text-align: left;
     font-size: 1em;
 }
@@ -278,7 +279,7 @@ footer {
 
 .rodape {
     background-color: rgb(16, 16, 16);
-    color: rgb(255, 255, 255);
+    color: var(--cinza-d1);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -323,14 +324,12 @@ a:focus {
 }
 
 .container-card-espetos {
-    width: auto;
-    gap: 60px;
-    margin: 40px 50px;
+    gap: 40px;
 }
 
 .card-espetos-topo,
 .card-espetos-baixo {
-    gap: 60px;
+    gap: 40px;
 }
 
 .card-espetos {
@@ -351,8 +350,8 @@ a:focus {
 .card-espetos>img {
     max-width: 300px;
     position: absolute;
-    bottom:-10px;
-    right:20px
+    bottom: -10px;
+    right: 20px
 }
 
 .card-espetos:hover {
@@ -379,16 +378,15 @@ a:focus {
 }
 
 .conheca-os-modelos {
-    padding-block: 130px;
-    text-align: center;
-    color: white;
+    padding-block: 40px;
 }
 
 
 .conheca-os-modelos-text {
-    margin-bottom: 30px;
     gap: 10px;
     padding-inline: 50px;
+    padding-top: 100px;
+    color: #d1d1d1;
 }
 
 .card-videos-wrapper {
@@ -455,17 +453,16 @@ a:focus {
 
 .super-versatil-text {
     gap: 10px;
-    color: white;
     padding-inline: 50px;
     text-align: center;
     margin: auto;
+    padding-top: 100px;
 }
 
 /* ######  FAQ  ###### */
 
 .container-faq-wrapper {
     padding-bottom: 50px;
-    color: white;
 }
 
 .container-faq-wrapper>h1 {
@@ -564,20 +561,27 @@ a:focus {
     display: grid;
     gap: 20px;
 }
+
 .simples-com-garra {
     justify-content: space-around;
 }
+
+.simples-com-garra>img {
+    max-height: 70%;
+}
+
 .garra {
     gap: 40px;
     text-align: center;
 }
 
-.garra > img {
+.garra>img {
     transform: scale(1.22) translateY(-10px);
 }
 
 .praticidade {
     gap: 30px;
+    flex-wrap: nowrap;
 }
 
 .praticidade>img {
@@ -593,51 +597,110 @@ a:focus {
     gap: 20px;
 }
 
-.card-grid-duplo > .card-grid-item {
+.card-grid-duplo>.card-grid-item {
     background-color: #d1d1d1;
 
 }
 
-.espeto-duplo-principal{
+.espeto-duplo-principal {
     padding: 0;
     overflow: hidden;
     grid-area: espeto-duplo-principal;
 
 }
-.detalhe-ponteira-espeto-duplo{
+
+.detalhe-ponteira-espeto-duplo {
     padding: 0;
     overflow: hidden;
     grid-area: detalhe-ponteira-espeto-duplo;
 }
-.ponta-desmontada-espeto-duplo{
+
+.ponta-desmontada-espeto-duplo {
     padding: 0;
     overflow: hidden;
     grid-area: ponta-desmontada-espeto-duplo;
 }
-.espeto-duplo-desmontado{
+
+.espeto-duplo-desmontado {
     padding: 0;
     overflow: hidden;
     grid-area: espeto-duplo-desmontado;
 }
 
+/* ##### CARD GRID TRIPLO ###### */
 
-.simples-com-garra>img {max-height: 70%;}
+.card-grid-triplo {
+    padding-block: 40px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+}
 
-.simples-com-garra {grid-area: simples-com-garra;}
-.sua-carne-no-seu-ponto {grid-area: sua-carne;}
-.como-funciona {grid-area: como-funciona;}
-.garra {grid-area: garra;}
-.praticidade {grid-area: praticidade;}
-.inoxaisi304 {grid-area: inoxaisi304;}
-.suporta {grid-area: suporta;}
-.regulavel {grid-area: regulavel;}
-.materiais-do-espeto {grid-area: materiais;}
+.triplo-principal {
+    height: 600px;
+}
+
+.triplo-principal,
+.triplo-em-pe,
+.triplo-desmontado {
+    padding: 0;
+    overflow: hidden;
+}
+
+.triplo-principal {
+    grid-area: triplo-principal;
+}
+
+.triplo-em-pe {
+    grid-area: triplo-em-pe;
+}
+
+.triplo-desmontado {
+    grid-area: triplo-desmontado;
+}
+
+.simples-com-garra {
+    grid-area: simples-com-garra;
+}
+
+.sua-carne-no-seu-ponto {
+    grid-area: sua-carne;
+}
+
+.como-funciona {
+    grid-area: como-funciona;
+}
+
+.garra {
+    grid-area: garra;
+}
+
+.praticidade {
+    grid-area: praticidade;
+}
+
+.inoxaisi304 {
+    grid-area: inoxaisi304;
+}
+
+.suporta {
+    grid-area: suporta;
+}
+
+.regulavel {
+    grid-area: regulavel;
+}
+
+.materiais-do-espeto {
+    grid-area: materiais;
+}
 
 
 /* ###### HERO ESPETOS ###### */
 
 .hero-espetos-wrapper {
     background-color: #d1d1d1;
+    color: var(--grafite);
 }
 
 .hero-espetos {
@@ -688,8 +751,7 @@ a:focus {
     background-color: #101010;
 }
 
-.especificacoes-tecnicas-wrapper>h1{
-    color: white;
+.especificacoes-tecnicas-wrapper>h1 {
     text-align: center;
     padding-bottom: 50px;
 }
@@ -727,57 +789,74 @@ a:focus {
     height: 100%;
 }
 
-/* ###### ESPETO DUPLO ###### */
 
 @media (min-width: 800px) {
-    
+
     .card-grid {
         grid-template-columns: repeat(3, 1fr);
         max-width: 1000px;
         grid-template-areas:
-        "sua-carne sua-carne como-funciona"
-        "sua-carne sua-carne praticidade"
-        "inoxaisi304 suporta praticidade" 
-        "inoxaisi304 regulavel regulavel "
-        "materiais materiais materiais" ;
+            "sua-carne sua-carne como-funciona"
+            "sua-carne sua-carne praticidade"
+            "inoxaisi304 suporta praticidade"
+            "inoxaisi304 regulavel regulavel "
+            "materiais materiais materiais";
     }
-    .svg-espeto{
-        width: 500px;
+
+    .svg-espeto {
+        width: 400px;
         padding-top: 20px;
         padding-bottom: 20px;
+        padding-right: 20px;
+        transform-origin: 50%;
+        transform: rotate(180deg);
     }
-    .img-hero-simples{
+
+    .img-hero-simples {
         max-width: 700px;
     }
 
     .card-grid-simples {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-        "garra simples-com-garra praticidade"
-        "garra simples-com-garra praticidade"
-        "inoxaisi304 simples-com-garra suporta"
-        "inoxaisi304 simples-com-garra regulavel"
-        "materiais materiais materiais";
+        grid-template-areas:
+            "garra simples-com-garra praticidade"
+            "garra simples-com-garra praticidade"
+            "inoxaisi304 simples-com-garra suporta"
+            "inoxaisi304 simples-com-garra regulavel"
+            "materiais materiais materiais";
     }
 
     .card-grid-duplo {
         grid-template-columns: repeat(3, 1fr);
         width: clamp(700px, 90%, 1200px);
         grid-template-areas:
-        "espeto-duplo-desmontado espeto-duplo-desmontado espeto-duplo-principal"
-        "espeto-duplo-desmontado espeto-duplo-desmontado espeto-duplo-principal"
-        "detalhe-ponteira-espeto-duplo detalhe-ponteira-espeto-duplo espeto-duplo-principal"
-        "detalhe-ponteira-espeto-duplo detalhe-ponteira-espeto-duplo praticidade"
-        "inoxaisi304 suporta ponta-desmontada-espeto-duplo" 
-        "inoxaisi304 regulavel regulavel "
-        "materiais materiais materiais" ;
+            "espeto-duplo-desmontado espeto-duplo-desmontado espeto-duplo-principal"
+            "espeto-duplo-desmontado espeto-duplo-desmontado espeto-duplo-principal"
+            "detalhe-ponteira-espeto-duplo detalhe-ponteira-espeto-duplo espeto-duplo-principal"
+            "detalhe-ponteira-espeto-duplo detalhe-ponteira-espeto-duplo praticidade"
+            "inoxaisi304 suporta ponta-desmontada-espeto-duplo"
+            "inoxaisi304 regulavel regulavel "
+            "materiais materiais materiais";
     }
 
+    .card-grid-triplo {
+        grid-template-columns: repeat(3, 1fr);
+        width: clamp(700px, 90%, 1200px);
+        grid-template-areas:
+            "triplo-desmontado triplo-desmontado triplo-em-pe"
+            "triplo-desmontado triplo-desmontado triplo-em-pe"
+            "triplo-desmontado triplo-desmontado triplo-em-pe"
+            "triplo-principal triplo-principal triplo-principal"
+            "triplo-principal triplo-principal triplo-principal"
+            "inoxaisi304 suporta praticidade"
+            "inoxaisi304 regulavel praticidade"
+            "materiais materiais materiais";
+    }
 }
 
 @media (max-width: 799px) {
 
-    .navbar{
+    .navbar {
         flex-wrap: nowrap;
         justify-content: space-around;
     }
@@ -821,39 +900,43 @@ a:focus {
         gap: 10px;
         margin-left: -60px;
     }
-    .svg-espeto{
+
+    .svg-espeto {
         min-width: 300px;
         padding-top: 20px;
         padding-bottom: 20px;
+        transform-origin: 50%;
+        transform: rotate(180deg);
     }
-    .img-hero-simples{
+
+    .img-hero-simples {
         min-width: 200px;
     }
 
     .card-grid {
         grid-template-columns: 1fr;
         grid-template-areas:
-        "sua-carne"
-        "como-funciona"
-        "praticidade"
-        "inoxaisi304" 
-        "suporta"
-        "regulavel"
-        "materiais" ;
+            "sua-carne"
+            "como-funciona"
+            "praticidade"
+            "inoxaisi304"
+            "suporta"
+            "regulavel"
+            "materiais";
     }
 
     .card-grid-simples {
         grid-template-columns: 1fr;
         gap: 30px;
         padding-inline: 30px;
-        grid-template-areas: 
-        "simples-com-garra"
-        "garra"
-        "praticidade"
-        "inoxaisi304"
-        "suporta"
-        "regulavel"
-        "materiais";
+        grid-template-areas:
+            "simples-com-garra"
+            "garra"
+            "praticidade"
+            "inoxaisi304"
+            "suporta"
+            "regulavel"
+            "materiais";
     }
 
     .card-grid-duplo {
@@ -861,18 +944,18 @@ a:focus {
         padding-inline: 30px;
         gap: 30px;
         grid-template-areas:
-        "espeto-duplo-desmontado"
-        "espeto-duplo-principal"
-        "detalhe-ponteira-espeto-duplo"
-        "ponta-desmontada-espeto-duplo" 
-        "praticidade"
-        "inoxaisi304"
-        "suporta"
-        "regulavel"
-        "materiais";
+            "espeto-duplo-desmontado"
+            "espeto-duplo-principal"
+            "detalhe-ponteira-espeto-duplo"
+            "ponta-desmontada-espeto-duplo"
+            "praticidade"
+            "inoxaisi304"
+            "suporta"
+            "regulavel"
+            "materiais";
     }
 
-    .hero-espetos-title{
+    .hero-espetos-title {
         padding-bottom: 40px;
     }
 
