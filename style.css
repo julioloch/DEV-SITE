@@ -173,12 +173,12 @@ img {
     display: grid;
     margin: auto;
     padding-inline: 16px;
-    gap: 20px;
+    gap: 10px;
     padding-top: 50px;
 }
 
 .card-grid-item {
-    border-radius: 0.9em;
+    border-radius: 0.4em;
     padding: 16px;
     background-color: var(--cinza-d1);
     color: var(--grafite);
@@ -559,7 +559,7 @@ a:focus {
     padding-block: 40px;
     margin: auto;
     display: grid;
-    gap: 20px;
+    gap: 10px;
 }
 
 .simples-com-garra {
@@ -585,7 +585,7 @@ a:focus {
 }
 
 .praticidade>img {
-    transform: scale(1.14) translate(-5px, 10px);
+    transform: scale(1.1) translate(-5px, 10px);
 }
 
 /* ##### CARD GRID DUPLO #######0 */
@@ -594,7 +594,7 @@ a:focus {
     padding-block: 40px;
     margin: auto;
     display: grid;
-    gap: 20px;
+    gap: 10px;
 }
 
 .card-grid-duplo>.card-grid-item {
@@ -633,12 +633,9 @@ a:focus {
     padding-block: 40px;
     margin: auto;
     display: grid;
-    gap: 20px;
+    gap: 10px;
 }
 
-.triplo-principal {
-    height: 600px;
-}
 
 .triplo-principal,
 .triplo-em-pe,
@@ -646,6 +643,29 @@ a:focus {
     padding: 0;
     overflow: hidden;
 }
+
+
+.card-grid-petiscos {
+    padding-block: 40px;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+}
+
+.petiscos-em-pe {
+    padding: 0;
+    overflow: hidden;
+}
+
+.petiscos-principal {
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/* #### GRID AREAS ADRESSING #### */
+
+
 
 .triplo-principal {
     grid-area: triplo-principal;
@@ -693,6 +713,14 @@ a:focus {
 
 .materiais-do-espeto {
     grid-area: materiais;
+}
+
+.petiscos-principal {
+    grid-area: petiscos-principal;
+}
+
+.petiscos-em-pe {
+    grid-area: petiscos-em-pe;
 }
 
 
@@ -808,7 +836,7 @@ a:focus {
         padding-top: 20px;
         padding-bottom: 20px;
         padding-right: 20px;
-        transform-origin: 50%;
+        transform-origin: 48%;
         transform: rotate(180deg);
     }
 
@@ -840,17 +868,25 @@ a:focus {
     }
 
     .card-grid-triplo {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         width: clamp(700px, 90%, 1200px);
+        gap: 10px;
         grid-template-areas:
-            "triplo-desmontado triplo-desmontado triplo-em-pe"
-            "triplo-desmontado triplo-desmontado triplo-em-pe"
-            "triplo-desmontado triplo-desmontado triplo-em-pe"
-            "triplo-principal triplo-principal triplo-principal"
-            "triplo-principal triplo-principal triplo-principal"
-            "inoxaisi304 suporta praticidade"
-            "inoxaisi304 regulavel praticidade"
-            "materiais materiais materiais";
+            "triplo-desmontado triplo-desmontado triplo-em-pe triplo-em-pe triplo-principal triplo-principal triplo-principal"
+            "inoxaisi304 inoxaisi304 suporta suporta suporta praticidade praticidade"
+            "inoxaisi304 inoxaisi304 regulavel regulavel regulavel praticidade praticidade"
+            "materiais materiais materiais materiais materiais materiais materiais";
+    }
+
+    .card-grid-petiscos {
+        grid-template-columns: repeat(7, 1fr);
+        width: clamp(700px, 90%, 1200px);
+        gap: 10px;
+        grid-template-areas:
+            "petiscos-principal petiscos-principal petiscos-principal petiscos-principal petiscos-em-pe petiscos-em-pe petiscos-em-pe"
+            "inoxaisi304 inoxaisi304 suporta suporta suporta praticidade praticidade"
+            "inoxaisi304 inoxaisi304 regulavel regulavel regulavel praticidade praticidade"
+            "materiais materiais materiais materiais materiais materiais materiais";
     }
 }
 
@@ -905,7 +941,7 @@ a:focus {
         min-width: 300px;
         padding-top: 20px;
         padding-bottom: 20px;
-        transform-origin: 50%;
+        transform-origin: 48%;
         transform: rotate(180deg);
     }
 
