@@ -1098,7 +1098,10 @@ h3 {
 
 .regulavel {
     text-indent: 0px;
-    gap: 80px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
 .regulavel-info>p {
